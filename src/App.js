@@ -26,29 +26,11 @@ function App() {
       amount: 450,
       date: new Date(2021, 5, 12),
     },
-  ]
-
+  ];
   return (
     <div>
-      <h2>Let's Get Started</h2>
-      <div>
-        <Expenses items={expenses} />
-
-        {/* SECOND APPROACH */}
-
-        {/* <ExpenseItem
-          expenses={expenses[0]}
-        />
-        <ExpenseItem
-          expenses={expenses[1]}
-        />
-        <ExpenseItem
-          expenses={expenses[2]}
-        />
-        <ExpenseItem
-          expenses={expenses[3]}
-        /> */}
-      </div>
+      <h2>Let's get Started</h2>
+      <Expenses items={expenses}/>
     </div>
   );
 }
