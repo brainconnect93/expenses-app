@@ -2,7 +2,7 @@ import React from "react";
 import "./ExpenseForm.css";
 import { useState } from "react";
 
-const ExpensForm = (props) => {
+const ExpenseForm = (props) => {
   const [enterTitle, setEnterTitle] = useState("");
   const [enterAmount, setEnterAmount] = useState("");
   const [enterDate, setEnterDate] = useState("");
@@ -105,10 +105,11 @@ const ExpensForm = (props) => {
         </div>
       </div>
       <div className="new-expense__actions">
+        <button type="button" onClick={props.onCancel}>Cancel</button>
         <button type="submit">Add Expense</button>
       </div>
     </form>
   );
 };
 
-export default ExpensForm;
+export default ExpenseForm;
